@@ -7,7 +7,7 @@ import SearchPage from './pages/Search'
 const App = () => (
   <div className="flex gap-5">
     <Sidebar />
-    <main className="ml-72 mr-6">
+    <main className="ml-72 mr-6 w-full">
       <Route path="/" component={Main}></Route>
       <Route path="/search" component={SearchPage}></Route>
       {/* <Route path="/inbox" component={InboxPage} /> */}
