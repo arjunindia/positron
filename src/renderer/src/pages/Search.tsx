@@ -85,40 +85,42 @@ function SearchResult({
     }
   }, [library])
   return (
-    <Link href={`/details/${movie['#IMDB_ID']}`}>
-      <Card className="mt-6 flex items-center hover:bg-slate-800 cursor-pointer">
-        <CardHeader className="w-28">
-          <img src={imgSrc} alt="" className="w-28 h-28 object-cover rounded" />
-        </CardHeader>
-        <CardContent className="flex gap-6 justify-start items-baseline">
-          <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight whitespace-nowrap">
-            {title}
-          </h2>
-          <div className="flex gap-4">
-            {actors.split(',').map((each) => (
-              <Badge>{each}</Badge>
-            ))}
-          </div>
-        </CardContent>
-        <Button
-          className={`ml-auto mr-12 p-4 rounded-full ${
-            found ? 'bg-pink-600' : 'bg-transparent'
-          } text-white border hover:bg-opacity-20 h-full`}
-          onClick={() => {
-            setLibrary((library: Movie[]) => {
-              if (library.find((each) => each['#IMDB_ID'] === movie['#IMDB_ID'])) {
-                setFound(false)
-                return library.filter((each) => each['#IMDB_ID'] !== movie['#IMDB_ID'])
-              }
-              setFound(true)
-              return [...library, movie]
-            })
-          }}
-        >
-          <Heart />
-        </Button>
-      </Card>
-    </Link>
+    <div className="relative">
+      <Link href={`/details/${movie['#IMDB_ID']}`}>
+        <Card className="mt-6 flex items-center hover:bg-slate-800 cursor-pointer">
+          <CardHeader className="w-28">
+            <img src={imgSrc} alt="" className="w-28 h-28 object-cover rounded" />
+          </CardHeader>
+          <CardContent className="flex gap-6 justify-start items-baseline">
+            <h2 className="scroll-m-20 text-2xl font-semibold tracking-tight whitespace-nowrap">
+              {title}
+            </h2>
+            <div className="flex gap-4">
+              {actors.split(',').map((each) => (
+                <Badge>{each}</Badge>
+              ))}
+            </div>
+          </CardContent>
+        </Card>
+      </Link>
+      <Button
+        className={`absolute top-1/3 right-5 p-6 rounded-full ${
+          found ? 'bg-pink-600' : 'bg-transparent'
+        } text-white border hover:bg-opacity-20`}
+        onClick={() => {
+          setLibrary((library: Movie[]) => {
+            if (library.find((each) => each['#IMDB_ID'] === movie['#IMDB_ID'])) {
+              setFound(false)
+              return library.filter((each) => each['#IMDB_ID'] !== movie['#IMDB_ID'])
+            }
+            setFound(true)
+            return [...library, movie]
+          })
+        }}
+      >
+        <Heart />
+      </Button>
+    </div>
   )
 }
 export default SearchPage

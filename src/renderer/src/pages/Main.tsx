@@ -24,7 +24,8 @@ export default function Main() {
                   />
                   <Button
                     className={`ml-auto mr-12 p-4 rounded-full bg-pink-600 text-white border hover:bg-opacity-20 absolute top-0 right-0`}
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.stopPropagation()
                       setLibrary((library: Movie[]) => {
                         if (library.find((each) => each['#IMDB_ID'] === movie['#IMDB_ID'])) {
                           return library.filter((each) => each['#IMDB_ID'] !== movie['#IMDB_ID'])
