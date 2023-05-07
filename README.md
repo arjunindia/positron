@@ -1,34 +1,19 @@
-# positron
+![Electron Notion](https://user-images.githubusercontent.com/64391274/235363274-375ce61c-721f-4543-a150-1b99525d54ac.png)
 
-An Electron application with React and TypeScript
 
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-## Project Setup
-
-### Install
-
-```bash
-$ npm install
-```
-
-### Development
-
-```bash
-$ npm run dev
-```
-
-### Build
-
-```bash
-# For windows
-$ npm run build:win
-
-# For macOS
-$ npm run build:mac
-
-# For Linux
-$ npm run build:linux
-```
+# Project Name
+Long Description about project. This project do that. This project is awesome...
+## Team members
+1. Name [Embed personal github URL]
+2. Name [Embed perosnal github URL]
+## Link to product walkthrough
+[link to video]
+## How it Works ?
+1. Explaining the working of project
+2. Embed video of project demo
+## Libraries used
+Library Name - Version
+## How to configure
+Instructions for setting up project
+## How to Run
+Instructions for running
