@@ -1,15 +1,17 @@
 import Versions from './components/Versions'
 import icons from './assets/icons.svg'
 import { Link, Route } from 'wouter'
+import Sidebar from '@/components/Sidebar'
+import Main from '@/pages/Main'
+import SearchPage from './pages/Search'
 const App = () => (
-  <div>
-    <Link href="/about">
-      <a className="link">Profile</a>
-    </Link>
-
-    <Route path="/about">About Us</Route>
-    <Route path="/users/:name">{(params) => <div>Hello, {params.name}!</div>}</Route>
-    {/* <Route path="/inbox" component={InboxPage} /> */}
+  <div className="flex gap-5">
+    <Sidebar />
+    <main className="ml-72 mr-6">
+      <Route path="/" component={Main}></Route>
+      <Route path="/search" component={SearchPage}></Route>
+      {/* <Route path="/inbox" component={InboxPage} /> */}
+    </main>
   </div>
 )
 export default App
