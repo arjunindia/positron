@@ -10,6 +10,10 @@ Positron is a desktop application that allows you to manage your movie and show 
 2. Alfina Haneef [https://github.com/alfina-haneef]
 3. Krishna Prasanth [https://github.com/krishnaprasanth7102]
 
+## Demo
+
+[See the Demo Here](https://youtu.be/pyhzNIJ5Y7o)
+
 ## How it Works ?
 
 1. The project is built using Electron and React.
