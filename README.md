@@ -1,19 +1,39 @@
 ![Electron Notion](https://user-images.githubusercontent.com/64391274/235363274-375ce61c-721f-4543-a150-1b99525d54ac.png)
 
+# Positron
 
-# Project Name
-Long Description about project. This project do that. This project is awesome...
+Positron is a desktop application that allows you to manage your movie and show watchlist. It is built using Electron and React.
+
 ## Team members
-1. Name [Embed personal github URL]
-2. Name [Embed perosnal github URL]
-## Link to product walkthrough
-[link to video]
+
+1. Arjun S [https://github.com/arjunindia/]
+2. Alfina Haneef [https://github.com/alfina-haneef]
+3. Krishna Prasanth [https://github.com/krishnaprasanth7102]
+
 ## How it Works ?
-1. Explaining the working of project
-2. Embed video of project demo
+
+1. The project is built using Electron and React.
+2. The project uses the IMDB API to fetch movie and show data.
+3. The project uses the Local Storage API to store the watchlist data.
+
 ## Libraries used
-Library Name - Version
+
+1. Electron
+2. React
+3. Wouter
+4. @Shadcn/ui
+
 ## How to configure
-Instructions for setting up project
-## How to Run
-Instructions for running
+
+```bash
+npm install
+npm run dev
+```
+
+## How to Build
+
+```bash
+npm run build:win
+```
+
+Or download the latest release.
