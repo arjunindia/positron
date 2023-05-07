@@ -2,16 +2,15 @@ import { useLocalStorage } from 'usehooks-ts'
 import type { Movie } from '@/lib/types'
 import { useLocation } from 'wouter'
 import { useEffect, useState } from 'react'
-import type { Movie as Mo } from '@/lib/Movie'
 export default function Details() {
   const [library, setLibrary] = useLocalStorage<Movie[]>('library', [])
   const [location, setLocation] = useLocation()
-  const [moreInfo, setMoreInfo] = useState<Mo>()
+  const [moreInfo, setMoreInfo] = useState<any>()
 
   useEffect(() => {
     fetch(`https://search.imdbot.workers.dev/?tt=${location.split('/')[2]}`)
       .then((res) => res.json())
-      .then((data: Mo) => {
+      .then((data: any) => {
         setMoreInfo(data)
       })
   }, [])
