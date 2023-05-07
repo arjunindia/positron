@@ -3,7 +3,7 @@ import type { Movie } from '@/lib/types'
 import { useLocation } from 'wouter'
 import { useEffect, useState } from 'react'
 export default function Details() {
-  const [library, setLibrary] = useLocalStorage<Movie[]>('library', [])
+  const [library, _] = useLocalStorage<Movie[]>('library', [])
   const [location, setLocation] = useLocation()
   const [moreInfo, setMoreInfo] = useState<any>()
 

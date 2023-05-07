@@ -1,6 +1,4 @@
-import Versions from './components/Versions'
-import icons from './assets/icons.svg'
-import { Link, Route } from 'wouter'
+import { Route } from 'wouter'
 import Sidebar from '@/components/Sidebar'
 import Main from '@/pages/Main'
 import SearchPage from '@/pages/Search'

@@ -1,4 +1,3 @@
-import { cn } from '@/lib/utils'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/Card'
 import { useLocalStorage } from 'usehooks-ts'
 import type { Movie } from '@/lib/types'
