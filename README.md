@@ -2,13 +2,7 @@
 
 # Positron
 
-Positron is a desktop application that allows you to manage your movie and show watchlist. It is built using Electron and React.
-
-## Team members
-
-1. Arjun S [https://github.com/arjunindia/]
-2. Alfina Haneef [https://github.com/alfina-haneef]
-3. Krishna Prasanth [https://github.com/krishnaprasanth7102]
+Positron is a desktop application that allows you to manage your movie and show watchlist. It is built with Electron, Vite and React.
 
 ## Demo
 
